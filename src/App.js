@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div>
+    <div className="HIKAM">
       <Header />
       <Banner />
       <About />
