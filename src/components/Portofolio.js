@@ -5,53 +5,71 @@ import megumi from "../../src/Assets/Portofolio/Abinara.png";
 import evolution from "../../src/Assets/Portofolio/Evol.png";
 import tigaFasa from "../../src/Assets/Portofolio/3fasa.png";
 import abmas from "../../src/Assets/Portofolio/abmas.jpeg"; 
-
+import crusteaWeb from "../../src/Assets/Portofolio/crustea-web.png";
 const Portofolio = ({
     ListProjects = [
         {
             name: 'Evolution ITS',
             icon: evolution,
             desc: 'Build Full-Stack Web for Electrical and Robotics National Competition that allows CRUD, auth and email verfication with laravel.',
-            link: 'https://its-evolution.com'
+            link: 'https://its-evolution.com',
+            tech: ["laravel","MySQL","TailwindCSS"]
         },
         {
             name: 'Implementation of an IoT Integrated Solar Power Based Water Pump',
             icon: abmas,
             desc: 'Creating an IoT Integrated Solar Power based Water Pump tool to Improve Irrigation facilities for rice farmers in Kedunggempol village, Mojosari District, Regency Mojokerto',
             link: 'https://www.its.ac.id/news/2023/12/10/abmas-its-gagas-pompa-air-berbasis-plts-dan-iot-untuk-irigasi/',
+            tech: ["IoT", "Microcontroller", "C/C++", "Embbeded System"]
+        },
+        {
+            name: 'Crustea Landing Page',
+            icon: crusteaWeb,
+            desc: 'Build Landing Page for Company Profile with Vite React Typescript',
+            link: 'https://crustea.id',
+            tech: ["ReactTS", "Typescript", "TailwindCSS"]
         },
         {
             name: '3 Phase Electricity Monitoring',
             icon: tigaFasa,
             desc:'Create Smart Energy Meter that read all 3 phase electricity elements and shows into dashboard',
-            link: 'https://github.com/IAmNewbe/3-phase-electricity-monitoring.git'
+            link: 'https://github.com/IAmNewbe/3-phase-electricity-monitoring.git',
+            tech: ["IoT", "Embedded System", "Electrical", "C/C++"]
         },
         {
             name: 'Abinara 1 ITS Website',
             icon: abinara,
             desc: 'Create a Landing page for Abinara-1 ITS Robotics Team using only HTML CSS and JavaScript.',
             link: 'https://abinara-1-its.github.io',
+            tech: ["HTML", "CSS", "Javascript"]
         },
         {
             name: 'Water Quality and Power Monitoring, IOT Integrated',
             icon: crustea,
             desc: 'Design and develop internet-connected devices that collect, process, and transmit data. Build user interfaces in for the needs of users.',
-            link: 'https://crustea.id'
+            link: 'https://crustea.id',
+            tech: ["IoT", "Microcontroller", "C/C++", "Embedded System"]
         },
         {
             name: 'ITS Robotics Company Profile Website',
             icon: robotics,
             desc: 'Lead and manage a team of web developers to create and maintain company websites',
-            link: 'https://itsrobotics.vercel.app'
+            link: 'https://itsrobotics.vercel.app',
+            tech: ["React JS", "TailwindCSS", "HTML"]
         },
         {
             name: 'Firefighter and SAR Legged Robot',
             icon: megumi,
             desc: 'Conducts research and competition for legged autonomous robots with missions to rescue victims and extinguish fires.',
-            link: 'https://abinara-1-its.github.io'
+            link: 'https://abinara-1-its.github.io',
+            tech: ["STM32", "Arduino", "C/C++", "Computer Vision", "Embedded System"]
         },
     ]
 }) => {
+//   console.log(ListProjects[0].tech.forEach())
+    ListProjects[0].tech.forEach(tech => {
+        console.log(tech)
+    })
   return (
     <>
       <div id="portofolio"></div>
@@ -73,11 +91,21 @@ const Portofolio = ({
                         <div className="rounded-md shadow-md overflow-hidden">
                             <img src={project.icon} alt="" className="project-img"/>
                         </div>
-                        <h3 className="font-semibold text-xl text-primary-0 mt-5 mb-3"><a href={project.link} target="_blank" rel="noreferrer">{project.name}</a></h3>
+                        <h3 className="font-semibold text-xl text-primary-0 mt-5 mb-3">
+                            <a href={project.link} target="_blank" rel="noreferrer">
+                                {project.name}
+                                <span className="font-medium text-base text-gray-700 ml-3 rounded-md border border-gray-700 px-1 hover:bg-slate-700 hover:text-white">Click Here</span>
+                            </a>
+                        </h3>
                         <p className="font-medium text-base text-secondary-0">{project.desc}</p>
+                        <p className="font-medium text-tersier-0 my-2 w-fulls">Tech Stacks : 
+                            {project.tech.map((tec, index) => {
+                                return (<span className="text-tersier-0 rounded-md mx-1 px-1 cursor-pointer hover:text-white hover:bg-tersier-0 w-full"> {tec}</span>)
+                            })}
+                        </p>
                     </div>
                     )
-                })};
+                })} 
             </div>
         </div>
         <div id="skill"></div>
