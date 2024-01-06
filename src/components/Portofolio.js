@@ -6,6 +6,8 @@ import evolution from "../../src/Assets/Portofolio/Evol.png";
 import tigaFasa from "../../src/Assets/Portofolio/3fasa.png";
 import abmas from "../../src/Assets/Portofolio/abmas.jpeg"; 
 import crusteaWeb from "../../src/Assets/Portofolio/crustea-web.png";
+import movie from "../../src/Assets/Portofolio/movie.png";
+
 const Portofolio = ({
     ListProjects = [
         {
@@ -56,6 +58,13 @@ const Portofolio = ({
             desc: 'Lead and manage a team of web developers to create and maintain company websites',
             link: 'https://itsrobotics.vercel.app',
             tech: ["React JS", "TailwindCSS", "HTML"]
+        },
+        {
+            name: 'Movie Catalog',
+            icon: movie,
+            desc: 'Create a Movie Catalog website using ReactJS, TailwindCSS. Source themoviedb API',
+            link: 'https://react-movie-apps.vercel.app',
+            tech: ["React JS", "TailwindCSS", "API"]
         },
         {
             name: 'Firefighter and SAR Legged Robot',
