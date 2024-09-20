@@ -7,9 +7,17 @@ import tigaFasa from "../../src/Assets/Portofolio/3fasa.png";
 import abmas from "../../src/Assets/Portofolio/abmas.jpeg"; 
 import crusteaWeb from "../../src/Assets/Portofolio/crustea-web.png";
 import movie from "../../src/Assets/Portofolio/movie.png";
+import smartcity from "../../src/Assets/Portofolio/smartcity.jpg";
 
 const Portofolio = ({
     ListProjects = [
+        {
+            name: 'Smart City Weather Hub',
+            icon: smartcity,
+            desc: 'Digital platform displayed on the streets, providing real-time weather forecasts and environmental data from IoT-enabled street lighting systems and for bussiness uses.',
+            link: 'https://gemastik-iot.app.genez.io',
+            tech: ["React", "Tailwind CSS", "Vite", "IoT"]
+        },
         {
             name: 'Evolution ITS',
             icon: evolution,
