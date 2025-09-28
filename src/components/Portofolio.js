@@ -64,7 +64,7 @@ const Portofolio = ({
             name: 'ITS Robotics Company Profile Website',
             icon: robotics,
             desc: 'Lead and manage a team of web developers to create and maintain company websites',
-            link: 'https://itsrobotics.vercel.app',
+            link: 'https://web-company-profile-59a3t3hi4-itsrobotics.vercel.app/',
             tech: ["React JS", "TailwindCSS", "HTML"]
         },
         {
