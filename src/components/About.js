@@ -7,7 +7,7 @@ const About = () => {
             <h4 className="font-bold uppercase text-lg mb-4 text-tersier-0">About Me</h4>
             <h2 className="font-bold text-slate-900 text-3xl mb-5 max-w-md lg:text-4xl ">Current & Algorithm</h2>
             <p className="text-base font-medium text-secondary-0 max-w-xl lg:text-lg ">
-                Hey, I'm Hikam, an Electrical Engineering student from Sepuluh Nopember Institute of Technology. Currently at <a href="https://crustea.id" target="_blank" className="text-tersier-0" rel="noreferrer"> Crustea Indonesia as AIOT/Software Engineer</a> . Passionate about coding, transform lines of logic into digital symphonies.
+                Hey, I'm Hikam, an Electrical Engineering graduate from Sepuluh Nopember Institute of Technology. Currently at <a href="https://crustea.id" target="_blank" className="text-tersier-0" rel="noreferrer"> Huawei Indonesia as Optical Network Engineer</a> . Passionate about coding, transform lines of logic into digital symphonies.
             </p>
           </div>
           <div className="w-full px-4 lg:w-1/2 ">
